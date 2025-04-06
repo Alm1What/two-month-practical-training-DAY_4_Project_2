@@ -28,6 +28,81 @@ public class Supplier {
 
     private BigDecimal totalPrice; // загальна сума замовлення (ціна * кількість)
 
+    public Supplier() {
+    }
 
+    public Supplier(Long id, String name, String contactInfo, String address, int rating, Status status, LocalDate deliveryDate, BigDecimal totalPrice) {
+        this.id = id;
+        this.name = name;
+        this.contactInfo = contactInfo;
+        this.address = address;
+        this.rating = rating;
+        this.status = status;
+        this.deliveryDate = deliveryDate;
+        this.totalPrice = totalPrice;
+    }
 
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getContactInfo() {
+        return contactInfo;
+    }
+
+    public void setContactInfo(String contactInfo) {
+        this.contactInfo = contactInfo;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int rating) {
+        this.rating = rating;
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public LocalDate getDeliveryDate() {
+        return deliveryDate;
+    }
+
+    public void setDeliveryDate(LocalDate deliveryDate) {
+        this.deliveryDate = deliveryDate;
+    }
+
+    public BigDecimal getTotalPrice() {
+        return totalPrice;
+    }
+
+    public void setTotalPrice(BigDecimal totalPrice) {
+        this.totalPrice = totalPrice;
+    }
 }
